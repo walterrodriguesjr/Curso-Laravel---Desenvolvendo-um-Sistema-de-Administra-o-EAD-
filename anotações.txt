@@ -4,7 +4,7 @@
 1A-conhecendo os arquivos do dashboard 
 -explicação sobre o template, usado tailwind css e inertia.Js 
 -instalado o template do projeto direto do git
-    https://github.com/especializati/setup-docker-laravel.git
+    git clone https://github.com/especializati/setup-docker-laravel.git
 -remover o versionamento do git 
     rm -rf .git/
 -configurar o .env 
@@ -13,10 +13,19 @@
     docker-compose up -d 
 -acessa a aplicação de container docker 
     docker-compose exec app bash
--instala o composer dae 
+-instala o composer
     composer install
 -gera a key generation do php 
     php artisan key:generate
 -conectado com o banco de dados
+
+2A-instalando o laravel 9 
+  OK
+
+3A-versionar projeto laravel e armazenar no github 
+-criado o repositorio do projeto no github 
+    https://github.com/walterrodriguesjr/Curso-Laravel---Desenvolvendo-um-Sistema-de-Administra-o-EAD-
+-feito o primeiro commit do projeto 
+
 
 
