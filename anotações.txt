@@ -1,31 +1,54 @@
-01-intro admin EAD 
--explicação sobre o curso 
+01-INTRO ADMIN EAD
+-explicação sobre o curso
 
-1A-conhecendo os arquivos do dashboard 
--explicação sobre o template, usado tailwind css e inertia.Js 
+1A-conhecendo os arquivos do dashboard
+-explicação sobre o template, usado tailwind css e inertia.Js
 -instalado o template do projeto direto do git
     git clone https://github.com/especializati/setup-docker-laravel.git
--remover o versionamento do git 
+-remover o versionamento do git
     rm -rf .git/
--configurar o .env 
+-configurar o .env
     cp .env.example .env
--subir os containers docker 
-    docker-compose up -d 
--acessa a aplicação de container docker 
+-subir os containers docker
+    docker-compose up -d
+-acessa a aplicação de container docker
     docker-compose exec app bash
 -instala o composer
     composer install
--gera a key generation do php 
+-gera a key generation do php
     php artisan key:generate
 -conectado com o banco de dados
 
-2A-instalando o laravel 9 
+2A-instalando o laravel 9
   OK
 
-3A-versionar projeto laravel e armazenar no github 
--criado o repositorio do projeto no github 
+3A-versionar projeto laravel e armazenar no github
+-criado o repositorio do projeto no github
     https://github.com/walterrodriguesjr/Curso-Laravel---Desenvolvendo-um-Sistema-de-Administra-o-EAD-
--feito o primeiro commit do projeto 
+-feito o primeiro commit do projeto
+
+4A-extensões VsCode para laravel
+-instalada as extensções recomendadas
+
+
+02-CRIANDO TEMPLATE
+
+1B-criando o template personalizado para o laravel
+-download do template
+    Deixe o seu star: https://github.com/especializati/curso-laravel-9-dashboard-ead/tree/template
+    download manual, sem git, após, arrastado os arquivos para seus locais
+-criado as pastas de home, layouts e _partials, HTML separado usando esquema de @include e @yield
+
+2B-estratégia de menus no laravel
+-criada a route com prefix 'admin', sendo um group, de get para AdminController
+-acessar o container PHP: docker-compose exec app bash
+-dentro do container, criado o controller 'AdminController'
+    php artisan make:controller Admin\\AdminController
+-em config, foi criado o arquivo template.php, lá foram criados arrays que podem gerar dinamicamente
+    novos campos para o menu sidebar
+
+
+03-MODELAGEM DE TABELAS
 
 
 
