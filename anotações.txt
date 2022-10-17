@@ -62,5 +62,16 @@
     php artisan make:model Course -m
 -configurado as model e migrations de Course
 
+3C-modelagem das tabelas módulos e aulas no laravel
+-criado a migration e a model de Module
+    php artisan make:model Module -m
+-criado a migration e a model de Lesson
+    php artisan make:model Lesson -m
+-configurado as model e migrations de Module e Lesson
+-feitos os relacionamentos entre Course, Module e Lesson
+-rodada as migrations
+    php artisan migrate
 
+4C-modelagem de tabelas de suportes no laravel
+-
 
