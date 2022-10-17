@@ -58,6 +58,9 @@
     php artisan migrate
 
 2C-modelagem das tabelas módulos e aulas no laravel
--
+-criado a migration e a model de Course
+    php artisan make:model Course -m
+-configurado as model e migrations de Course
+
 
 
