@@ -73,5 +73,14 @@
     php artisan migrate
 
 4C-modelagem de tabelas de suportes no laravel
--
+-criado a migration e a model de Support
+    php artisan make:model Support -m
+-criado a migration e a model de ReplySupport
+    php artisan make:model ReplySupport -m
+-configurado as model e migrations de Support e ReplySupport
+-feitos os relacionamentos entre Support, ReplySupport e User e Lesson
+-rodada as migration fresh pois ouve alterações nas tabelas anteriormente criadas
+    php artisan migrate:fresh
+
+
 
