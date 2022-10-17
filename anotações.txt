@@ -50,5 +50,14 @@
 
 03-MODELAGEM DE TABELAS
 
+1C-modelagem da tabela de Admins no laravel
+-criado a migration e a model de Admin
+    php artisan make:model Admin -m
+-configurado as model e migrations de User e Admin
+-rodada as migration
+    php artisan migrate
+
+2C-modelagem das tabelas módulos e aulas no laravel
+-
 
 
