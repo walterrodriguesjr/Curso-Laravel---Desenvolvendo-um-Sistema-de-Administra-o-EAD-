@@ -101,7 +101,12 @@
 3D-implementar repositórios no laravel
 -configurado a function() de controller em UserRepository.php
 
-
+4D-implementar o service layer de usuário no laravel
+-configurado a function() de controller em UserService.php
+-criado a pasta Admin e dentro o controller UserController.php
+    php artisan make:controller Admin\\UserController
+-criada a Route users, de get para UserController
+-
 
 
 
