@@ -99,7 +99,9 @@
 -criado as pastas Repositories e Services
 
 3D-implementar repositórios no laravel
--
+-configurado a function() de controller em UserRepository.php
+
+
 
 
 
