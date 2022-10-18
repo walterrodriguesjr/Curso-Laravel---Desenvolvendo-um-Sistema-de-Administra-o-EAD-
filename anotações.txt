@@ -82,5 +82,20 @@
 -rodada as migration fresh pois ouve alterações nas tabelas anteriormente criadas
     php artisan migrate:fresh
 
+5C-modelagem da tabela de views no laravel
+-criado a migration e a model de View
+    php artisan make:model View -m
+-configurado as model e migrations de Support e View
+-rodado php artisan migrate:fresh , para rodar novamente todas as migration
+
+
+04-GESTÃO DE USUÁRIOS
+
+1D-service layer e repositories realmente fazem sentido no laravel?
+-
+
+
+
+
 
 
