@@ -92,6 +92,13 @@
 04-GESTÃO DE USUÁRIOS
 
 1D-service layer e repositories realmente fazem sentido no laravel?
+-a idéia é deixar os 'Models' enxuto.
+
+2D-princípio da inversão da dependência no laravel
+-a primeira Feature do projeto será 'gestão de usuários'
+-criado as pastas Repositories e Services
+
+3D-implementar repositórios no laravel
 -
 
 
