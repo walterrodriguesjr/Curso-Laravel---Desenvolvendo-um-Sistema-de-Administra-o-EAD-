@@ -107,7 +107,10 @@
     php artisan make:controller Admin\\UserController
 -criada a Route users, de get para UserController
 
--ERRO, AGUARDANDO AJUDA
+5D-listar usuários no laravel
+-em admin, foi criada a pasta users e o arquivo index.blade.php
+-feito adaptações para retornar o usuario na nova view index
+-
 
 
 

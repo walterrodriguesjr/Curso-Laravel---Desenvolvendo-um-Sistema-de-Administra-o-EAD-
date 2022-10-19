@@ -14,7 +14,7 @@ class UserService
         $this->repository = $repository;
     }
 
-    public function getAll(string $filter = '')
+    public function getAll(string $filter = ''): array
     {
         return $this->repository->getAll($filter);
     }
