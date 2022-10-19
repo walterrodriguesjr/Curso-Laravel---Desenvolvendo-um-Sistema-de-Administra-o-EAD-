@@ -106,7 +106,8 @@
 -criado a pasta Admin e dentro o controller UserController.php
     php artisan make:controller Admin\\UserController
 -criada a Route users, de get para UserController
--
+
+-ERRO, AGUARDANDO AJUDA
 
 
 
