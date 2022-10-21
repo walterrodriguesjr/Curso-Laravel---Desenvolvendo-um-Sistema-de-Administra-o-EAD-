@@ -133,7 +133,10 @@
 -criada a Route users/create, de post para UserController
 -em UserController, criado a function() store
 
-
+10D-validar e registrar usuário no laravel
+-criado e configurado as validações de StoreUser.php
+    php artisan make:request StoreUser
+-
 
 
 

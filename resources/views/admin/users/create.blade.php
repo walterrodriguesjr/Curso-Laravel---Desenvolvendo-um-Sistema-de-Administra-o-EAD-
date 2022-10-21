@@ -10,7 +10,7 @@
     <div class="w-full my-6 pr-0 lg:pr-2">
 
         <div class="leading-loose">
-            <form class="p-10 bg-white rounded shadow-xl" action="{{route('users.store')}}">
+            <form class="p-10 bg-white rounded shadow-xl" action="{{route('users.store')}}" method="post">
                 @include('admin.users._partials.form')
             </form>
         </div>
