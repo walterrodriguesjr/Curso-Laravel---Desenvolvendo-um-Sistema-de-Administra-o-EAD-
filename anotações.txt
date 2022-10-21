@@ -110,6 +110,17 @@
 5D-listar usuários no laravel
 -em admin, foi criada a pasta users e o arquivo index.blade.php
 -feito adaptações para retornar o usuario na nova view index
+
+6D-converter array do repositório para objeto PHP/laravel
+-feito configuração em UserService.php para exibir dados do usuario em /users
+
+7D-criar helpers no laravel
+-criado em app, a pasta Helpers, e o arquivo functions.php, onde ficará a funções
+-configurado a função que ficará global, covertItemsOfArrayToObject()
+-incluido a extensão em composer.json
+    composer dump-autoload
+
+-8D-laravel Acessors
 -
 
 

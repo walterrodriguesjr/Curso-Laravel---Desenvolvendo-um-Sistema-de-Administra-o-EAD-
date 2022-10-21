@@ -16,7 +16,12 @@ class UserService
 
     public function getAll(string $filter = ''): array
     {
-        return $this->repository->getAll($filter);
+        $users = $this->repository->getAll($filter);
+
+
+
+        return covertItemsOfArrayToObject($users);
+
     }
     public function findById(string $id): object|null
     {
