@@ -120,8 +120,22 @@
 -incluido a extensão em composer.json
     composer dump-autoload
 
--8D-laravel Acessors
--
+8D-laravel Acessors
+-a função que converte a data de criação, foi feita em User.php
+
+9D-preparar formulários de registro no laravel
+-configurando a index de usuários, feito inserção de HTML
+-criada a Route users/create, de get para UserController
+-inserido o route('users.create') no a href de index
+-em UserController, criado a function() create, que retorna a view create
+-criada e configurada a view create, HTML de formulário de cadastro de usuário
+-criada a pasta _partials dentro da pasta users, criado o arquivo form.blade.php
+-criada a Route users/create, de post para UserController
+-em UserController, criado a function() store
+
+
+
+
 
 
 

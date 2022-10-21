@@ -21,9 +21,16 @@ class UserController extends Controller
         $users = $this->service->getAll(
             filter: $request->get('filter', '')
         );
-
-
-
         return view('admin.users.index', compact('users'));
+    }
+
+    public function create()
+    {
+        return view('admin.users.create');
+    }
+
+    public function store(Request $request)
+    {
+        dd($request->all());
     }
 }
