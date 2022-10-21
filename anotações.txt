@@ -136,6 +136,9 @@
 10D-validar e registrar usuário no laravel
 -criado e configurado as validações de StoreUser.php
     php artisan make:request StoreUser
+
+11D-preparar a edição de usuários no laravel
+-criada a Route users/create/{id}/edit, de get para UserController
 -
 
 
