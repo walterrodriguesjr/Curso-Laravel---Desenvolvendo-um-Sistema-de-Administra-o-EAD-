@@ -10,7 +10,7 @@
     <div class="w-full my-6 pr-0 lg:pr-2">
 
         <div class="leading-loose">
-            <form class="p-10 bg-white rounded shadow-xl" action="{{route('users.update', $user->id)}}" method="post">
+            <form class="p-10 bg-white rounded shadow-xl" action="{{ route('users.update', $user->id) }}" method="POST">
                 @method('PUT')
                 @include('admin.users._partials.form')
             </form>

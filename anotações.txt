@@ -139,7 +139,11 @@
 
 11D-preparar a edição de usuários no laravel
 -criada a Route users/create/{id}/edit, de get para UserController
--
+
+12D-atualizar usuário no laravel
+-criada lógica para update de dados de usuário
+
+
 
 
 

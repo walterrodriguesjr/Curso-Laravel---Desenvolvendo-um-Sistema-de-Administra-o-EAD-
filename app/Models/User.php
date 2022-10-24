@@ -45,7 +45,7 @@ class User extends Authenticatable
         'id' => 'string',
     ];
 
-    protected $increminting = false;
+    public $incrementing = false;
 
     protected function createdAt() : Attribute
         {
