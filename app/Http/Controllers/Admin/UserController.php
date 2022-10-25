@@ -31,6 +31,14 @@ class UserController extends Controller
         return view('admin.users.create');
     }
 
+    public function show($id)
+    {
+        if (!$user = $this->service->findById($id))
+            return back();
+
+        return view('admin.users.show', compact('user'));
+    }
+
     public function store(StoreUser $request)
     {
         $data = $request->validated();
@@ -46,18 +54,39 @@ class UserController extends Controller
         if (!$user = $this->service->findById($id))
             return redirect()->back();
 
-            return view('admin.users.edit', compact('user'));
+        return view('admin.users.edit', compact('user'));
     }
 
     public function update(UpdateUser $request, $id)
     {
         $data =  $request->only(['name', 'email']);
-        if($request->password) $data['password'] = bcrypt($data['password']);
+        if ($request->password)
+            $data['password'] = bcrypt($data['password']);
 
         if (!$this->service->update($id, $data)) {
             return back();
         }
 
         return redirect()->route('users.index');
+    }
+
+    public function destroy($id)
+    {
+        $this->service->delete($id);
+
+        return redirect()->route('users.index');
+    }
+
+    public function changeImage($id)
+    {
+        if (!$user = $this->service->findById($id))
+            return back();
+
+        return view('admin.users.change-image', compact('user'));
+    }
+
+    public function uploadFile(Request $request)
+    {
+        dd($request->image);
     }
 }

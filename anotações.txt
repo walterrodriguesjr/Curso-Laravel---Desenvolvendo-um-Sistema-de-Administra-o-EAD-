@@ -143,6 +143,15 @@
 12D-atualizar usuário no laravel
 -criada lógica para update de dados de usuário
 
+14D-preparar para trabalhar com upload de arquivos no laravel
+-em 'Services' foi criado o arquivo 'UplodFile.php' para criação do serviço de upload de imagem
+-em UserController foi criado o método uploadFile()
+-em UserController foi criado o método changeImage()
+-criada a Route /users/{id}, de get para UserController, show
+-criada a Route users/create/{id}, de delete para UserController, destroy
+-criada a Route /users/{id}/image, de get para UserController, changeImage
+-criada a Route /users/{id}/update-image, de put para UserController, users.update.image
+-em resources/views/admin/users/, foi criado a view change-image.blade.php, usando como base o HTML de edit.blade.php
 
 
 
