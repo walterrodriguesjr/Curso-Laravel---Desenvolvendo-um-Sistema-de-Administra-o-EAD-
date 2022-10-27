@@ -162,6 +162,11 @@
 -criado o form-search.blade.php dentro de _partials
 -form-search feito @include dentro de index.blade.php
 
+17D-validação de uploads no laravel
+-tipo de arquivo a ser feito upload (pdf, jpeg etc)
+-tamanho do arquivo
+-php artisan make:request StoreImage
+-configurado StoreImage
 
 
 

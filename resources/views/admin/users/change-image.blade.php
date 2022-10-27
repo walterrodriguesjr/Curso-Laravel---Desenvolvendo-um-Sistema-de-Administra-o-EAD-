@@ -12,6 +12,7 @@
         <div class="leading-loose">
             <form class="p-10 bg-white rounded shadow-xl" action="{{ route('users.update.image', $user->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
+                @include('admin.includes.alerts')
                 @csrf
                 <div class="mt-2">
                     <label class=" block text-sm text-gray-600" for="message">Nova Foto</label>
