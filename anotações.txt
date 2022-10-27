@@ -158,6 +158,9 @@
 -rodado php artisan storage:link
 -congigurada a index.php de admin, para exibir as imagens cadastradas de usuário
 
+16D-criar filtros de usuários no laravel
+-criado o form-search.blade.php dentro de _partials
+-form-search feito @include dentro de index.blade.php
 
 
 

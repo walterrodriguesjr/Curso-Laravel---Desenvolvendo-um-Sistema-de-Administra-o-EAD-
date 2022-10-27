@@ -13,7 +13,7 @@
 
 <div class="w-full mt-12">
 
-    {{-- @include('admin.includes.form-search', ['routerName' => 'users.index']) --}}
+    @include('admin.includes.form-search', ['routerName' => 'users.index'])
 
     <div class="bg-white overflow-auto">
         <table class="min-w-full leading-normal">
