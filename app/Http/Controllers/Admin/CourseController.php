@@ -22,4 +22,9 @@ class CourseController extends Controller
         );
         return view('admin.courses.index', compact('courses'));
     }
+
+    public function create(Request $request)
+    {
+        return view('admin.courses.create');
+    }
 }

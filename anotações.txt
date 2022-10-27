@@ -199,6 +199,13 @@
 -criado e configurado CourseRepositoryInterface
 -configurada a view  index de Courses
 
+20F-formulário de cadastro de curso no laravel
+-em CourseController, criado o método create() para retornar a view do formulário de criação de curso
+-em admins/courses, foi criada a view create.blade.php
+-em admins/courses/partials, foi criado a view form.blade.php, para o cadastro de cursos
+
+
+
 
 
 
