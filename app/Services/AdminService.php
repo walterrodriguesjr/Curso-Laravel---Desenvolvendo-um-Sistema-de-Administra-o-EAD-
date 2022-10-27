@@ -17,11 +17,7 @@ class AdminService
     public function getAll(string $filter = ''): array
     {
         $users = $this->repository->getAll($filter);
-
-
-
         return covertItemsOfArrayToObject($users);
-
     }
     public function findById(string $id): object|null
     {

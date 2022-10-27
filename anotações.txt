@@ -188,6 +188,18 @@
 -inserido Admin::observe(AdminObserver::class); em EventServiceProvider.php
 
 
+06-GESTÃO DE CURSOS
+
+19F-listagem dos cursos no laravel
+-adicionado o icon de cursos em template.php
+-para courses, em web.php, foi usado a meneira de 'resource' para incluir as rotas e métodos de CoursesController
+-php artisan make:controller Admin\\CourseController
+-configurado CourseController
+-criado e configurado CourseService.php
+-criado e configurado CourseRepositoryInterface
+-configurada a view  index de Courses
+
+
 
 
 

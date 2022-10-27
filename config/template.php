@@ -18,6 +18,11 @@ return [
             'url' => '/admin/users',
             'icon' => 'fas fa-users',
         ],
+        [
+            'name' => 'Cursos',
+            'url' => '/admin/courses',
+            'icon' => 'fas fa-video',
+        ],
     ],
 
 ];
