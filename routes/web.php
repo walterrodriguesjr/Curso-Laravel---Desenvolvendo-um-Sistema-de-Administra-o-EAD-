@@ -1,11 +1,18 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function () {
 
+    /* ROUTE ADMINS */
+    Route::put('/admins/{id}/update-image', [AdminController::class, 'uploadFile'])->name('admins.update.image');
+    Route::get('/admins/{id}/image', [AdminController::class, 'changeImage'])->name('admins.change.image');
+    Route::resource('/admins', AdminController::class);
+
+    /* ROUTE USERS */
     Route::put('/users/{id}/update-image', [UserController::class, 'uploadFile'])->name('users.update.image');
     Route::get('/users/{id}/image', [UserController::class, 'changeImage'])->name('users.change.image');
     Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
@@ -16,7 +23,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
     Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
-    Route::get('/', [AdminController::class, 'index'])->name('admin.home');
+    Route::get('/', [DashboardController::class, 'index'])->name('admin.home');
 });
 
 Route::get('/', function () {

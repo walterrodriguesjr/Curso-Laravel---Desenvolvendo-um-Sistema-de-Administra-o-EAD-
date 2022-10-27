@@ -9,11 +9,15 @@ return [
             'icon' => 'fas fa-tachometer-alt',
         ],
         [
-            'name' => 'Usuários',
-            'url' => '/admin/users',
+            'name' => 'Administradores',
+            'url' => '/admin/admins',
             'icon' => 'fas fa-user',
         ],
-
+        [
+            'name' => 'Usuários',
+            'url' => '/admin/users',
+            'icon' => 'fas fa-users',
+        ],
     ],
 
 ];

@@ -169,6 +169,28 @@
 -configurado StoreImage
 
 
+05-GESTÃO DE ADMINISTRADORES
+
+18E-criando os administradores do sistema no laravel
+-adicionado o icon de administrador em template.php
+-para admins, em web.php, foi usado a meneira de 'resource' para incluir as rotas e métodos de AdminController
+-rotas de image foram reaproveitadas e adaptadas
+-php artisan make:controller Admin\\AdminController --resource
+-criado StoreAdmin.php
+-criado UpdateAdmin.php
+-criado AdminService.php
+-configurado AdminController.php
+-criado a class AdminRepositoryInterface.php (nos padrões de UserRepositoryInterface)
+-em AppServiceProvider.php, incluído AdminRepositoryInterface
+-criado e configurado AdminRepository.php
+-criado a pasta 'admins' dentro de views/admin, e dentro, suas respectivas views(usando ctrl+c ctrl+v das de users)
+-criado e configurado AdminObserver.php
+-inserido Admin::observe(AdminObserver::class); em EventServiceProvider.php
+
+
+
+
+
 
 
 
