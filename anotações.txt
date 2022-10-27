@@ -153,6 +153,11 @@
 -criada a Route /users/{id}/update-image, de put para UserController, users.update.image
 -em resources/views/admin/users/, foi criado a view change-image.blade.php, usando como base o HTML de edit.blade.php
 
+15D-upload de arquivos no laravel
+-configurado a env para imagens irem para a pasta public
+-rodado php artisan storage:link
+-congigurada a index.php de admin, para exibir as imagens cadastradas de usuário
+
 
 
 

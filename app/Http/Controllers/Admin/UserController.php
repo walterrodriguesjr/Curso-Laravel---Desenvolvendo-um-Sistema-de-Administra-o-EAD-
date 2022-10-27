@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUser;
 use App\Http\Requests\UpdateUser;
+use App\Services\UploadFile;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 
@@ -85,8 +86,13 @@ class UserController extends Controller
         return view('admin.users.change-image', compact('user'));
     }
 
-    public function uploadFile(Request $request)
+    public function uploadFile(Request $request, UploadFile $uploadFile, $id)
     {
-        dd($request->image);
+        $path = $uploadFile->store($request->image, 'users');
+
+        if (!$this->service->update($id, ['image' => $path])) {
+            return back();
+        }
+        return redirect()->route('users.index');
     }
 }
