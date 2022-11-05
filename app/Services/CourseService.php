@@ -19,4 +19,9 @@ class CourseService
         $courses = $this->repository->getAll($filter);
         return covertItemsOfArrayToObject($courses);
     }
+
+    public function create(array $data)
+    {
+        $this->repository->create($data);
+    }
 }

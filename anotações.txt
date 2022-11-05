@@ -204,7 +204,13 @@
 -em admins/courses, foi criada a view create.blade.php
 -em admins/courses/partials, foi criado a view form.blade.php, para o cadastro de cursos
 
+21F-cadastro de curso no laravel(com upload de imagem)
+-em CourseController foi criado o método store() para imagem
+-criado um observer
+    php artisan make:observer CourseObserver
 
+22F-validar cadastro de curso no laravel
+-
 
 
 
