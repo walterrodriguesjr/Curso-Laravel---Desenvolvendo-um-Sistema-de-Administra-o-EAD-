@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreCourse;
+use App\Http\Requests\Course\StoreCourse;
 use App\Services\CourseService;
 use App\Services\UploadFile;
 use Illuminate\Http\Request;
