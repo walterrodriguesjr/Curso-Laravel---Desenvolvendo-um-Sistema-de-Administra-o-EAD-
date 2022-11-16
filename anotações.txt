@@ -213,6 +213,14 @@
 -criado uma class de validação
     php artisan make:request StoreCourse
 
+23F-Editar curso no laravel
+-criado a view de courses, edit.blade.php
+    usado o modelo da edit de users, porem algumas alterações
+-em CourseService.php, foi criado a function findById()
+-em CourseController, feito a function edit($id)
+-em CourseController, feito a function update()
+
+
 
 
 
