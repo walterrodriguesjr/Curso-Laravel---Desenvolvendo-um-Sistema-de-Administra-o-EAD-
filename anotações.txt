@@ -210,7 +210,9 @@
     php artisan make:observer CourseObserver
 
 22F-validar cadastro de curso no laravel
--
+-criado uma class de validação
+    php artisan make:request StoreCourse
+
 
 
 
