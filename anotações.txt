@@ -223,6 +223,11 @@
 24F-validar cadastro de curso no laravel(unique)
 -ok
 
+25F-deletar um curso no laravel
+-criada a function show(), em CourseController
+-criada a view show.blade.php, de courses
+    feito as devidas alterações
+-criada a function destroy() em CourseController
 
 
 
