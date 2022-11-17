@@ -3,10 +3,14 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ModuleController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function () {
+
+    /* ROUTE MODULES */
+    Route::resource('/courses/{courseId}/modules', ModuleController::class);
 
     /* ROUTE COURSES */
     Route::resource('/courses', CourseController::class);

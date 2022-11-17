@@ -230,6 +230,17 @@
 -criada a function destroy() em CourseController
 
 
+07-MÓDULOS DO CURSO
+
+26G-definindo estratégias de módulos no laravel
+-em web.php, criado a Route de 'Modules' via 'resource'
+-criado ModuleController dentro de Admin
+    php artisan make:controller Admin\\ModuleController
+-criado ModuleRepositoryInterface.php
+-dentro da pastas Eloquent, criado o arquivo ModuleRepository.php
+
+
+
 
 
 
