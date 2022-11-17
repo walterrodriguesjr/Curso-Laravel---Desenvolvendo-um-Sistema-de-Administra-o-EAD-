@@ -220,6 +220,9 @@
 -em CourseController, feito a function edit($id)
 -em CourseController, feito a function update()
 
+24F-validar cadastro de curso no laravel(unique)
+-ok
+
 
 
 
