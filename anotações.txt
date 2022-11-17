@@ -239,6 +239,11 @@
 -criado ModuleRepositoryInterface.php
 -dentro da pastas Eloquent, criado o arquivo ModuleRepository.php
 
+27G-preparar a listagem dos módulos do curso no laravel
+-ok
+
+
+
 
 
 

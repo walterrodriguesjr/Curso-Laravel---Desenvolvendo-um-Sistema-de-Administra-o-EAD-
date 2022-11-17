@@ -15,4 +15,9 @@ class ModuleController extends Controller
     {
        $this->repository = $repository;
     }
+
+    public function index($courseId)
+    {
+        dd($this->repository->getAllByCourseId($courseId));
+    }
 }
