@@ -242,7 +242,9 @@
 27G-preparar a listagem dos módulos do curso no laravel
 -ok
 
-
+28G-instalar e usar o laravel Debugbar
+composer require barryvdh/laravel-debugbar --dev
+php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 
 
 
