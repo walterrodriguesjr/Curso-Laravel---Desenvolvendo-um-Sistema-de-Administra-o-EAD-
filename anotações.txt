@@ -246,6 +246,9 @@
 composer require barryvdh/laravel-debugbar --dev
 php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 
+29G-listando os módulos do curso no laravel
+-dentro da pasta admin, criada a pasta module, e dentro, o arquivo index.blade.php
+
 
 
 
