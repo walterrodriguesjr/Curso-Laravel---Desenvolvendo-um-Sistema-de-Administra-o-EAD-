@@ -2,16 +2,19 @@
 
 namespace App\Models;
 
+use App\Models\Traits\UuidTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Module extends Model
 {
-    use HasFactory;
+    use HasFactory, UuidTrait;
 
     protected $fillable = [
+        'course_id',
         'name'
     ];
+
 
     public function courses()
     {

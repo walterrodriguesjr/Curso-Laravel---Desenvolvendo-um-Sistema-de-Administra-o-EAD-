@@ -28,4 +28,21 @@ class ModuleController extends Controller
 
         return view('admin/courses/modules/index-modules', compact('course', 'modules'));
     }
+
+    public function create($courseId)
+    {
+        if (!$course = $this->repositoryCourse->findById($courseId))
+        return back();
+
+        return view('admin/courses/modules/create-modules', compact('course'));
+    }
+
+    public function store(Request $request, $courseId)
+    {
+        if (!$this->repositoryCourse->findById($courseId))
+        return back();
+
+        $this->repository->createByCourse($courseId, $request->only(['name']));
+        return redirect()->route('modules.index', $courseId);
+    }
 }

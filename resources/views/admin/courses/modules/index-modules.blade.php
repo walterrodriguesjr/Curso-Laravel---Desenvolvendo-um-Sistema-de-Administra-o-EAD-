@@ -6,7 +6,7 @@
 
     <h1 class="text-3xl text-black pb-6">
         Módulos do Curso {{ $course->name }}
-        <a href="{{ route('courses.create', $course->id) }}"
+        <a href="{{ route('modules.create', $course->id) }}"
             class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
             <i class="fas fa-plus"></i>
         </a>
@@ -37,7 +37,7 @@
                                 <div class="flex items-center">
                                     <div class="ml-3">
                                         <p class="text-gray-900 whitespace-no-wrap">
-                                            {{ $course->name }}
+                                            {{ $module->name }}
                                         </p>
                                     </div>
                                 </div>

@@ -249,6 +249,11 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 29G-listando os módulos do curso no laravel
 -dentro da pasta admin, criada a pasta module, e dentro, o arquivo index.blade.php
 
+30G-cadastrar novo módulo para o curso laravel
+-em ModuleController, criado a function create()
+-criado a view create-modules.blade.php
+-na pasta modules, criado a pasta partials, e a view form.blade.php
+
 
 
 
