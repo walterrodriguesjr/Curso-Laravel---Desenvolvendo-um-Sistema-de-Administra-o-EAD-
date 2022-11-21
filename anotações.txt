@@ -254,6 +254,10 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 -criado a view create-modules.blade.php
 -na pasta modules, criado a pasta partials, e a view form.blade.php
 
+31G-editar módulo do curso no laravel
+-criado método edit em ModuleController
+-criada a view edit-modules.blade.php
+-criado o método update
 
 
 
