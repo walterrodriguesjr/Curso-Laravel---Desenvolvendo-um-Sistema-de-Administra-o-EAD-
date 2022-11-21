@@ -259,6 +259,10 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 -criada a view edit-modules.blade.php
 -criado o método update
 
+32G-validar cadastro e edição de módulo no laravel
+-php artisan make:request StoreUpdateModule
+
+
 
 
 
