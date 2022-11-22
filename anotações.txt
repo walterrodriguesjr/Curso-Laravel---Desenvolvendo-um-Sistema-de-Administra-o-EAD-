@@ -266,7 +266,13 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 -criado método show em ModuleController
 -criada a view show-modules.blade.php
 -criado método destroy em ModuleController
--
+
+34G-filtrar módulos do curso no laravel
+-configurado o filter
+
+
+
+
 
 
 
