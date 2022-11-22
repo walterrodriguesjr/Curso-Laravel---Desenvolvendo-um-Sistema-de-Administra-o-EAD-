@@ -262,7 +262,11 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 32G-validar cadastro e edição de módulo no laravel
 -php artisan make:request StoreUpdateModule
 
-
+33G-deletar módulos do curso no laravel
+-criado método show em ModuleController
+-criada a view show-modules.blade.php
+-criado método destroy em ModuleController
+-
 
 
 
