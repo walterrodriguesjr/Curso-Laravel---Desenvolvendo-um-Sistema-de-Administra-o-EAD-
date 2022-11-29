@@ -12,10 +12,11 @@ class ModuleController extends Controller
 {
 
     protected $repository;
+    protected $repositoryCourse;
 
     public function __construct(CourseRepositoryInterface $repositoryCourse, ModuleRepositoryInterface $repository)
     {
-        $this->repositoryCourse = $repositoryCourse;
+       $this->repositoryCourse = $repositoryCourse;
        $this->repository = $repository;
     }
 

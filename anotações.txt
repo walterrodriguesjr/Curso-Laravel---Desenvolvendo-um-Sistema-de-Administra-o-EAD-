@@ -137,6 +137,8 @@
 -criado e configurado as validações de StoreUser.php
     php artisan make:request StoreUser
 
+ERRO, PAUSADO EM 15:54
+
 11D-preparar a edição de usuários no laravel
 -criada a Route users/create/{id}/edit, de get para UserController
 
@@ -269,6 +271,28 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 
 34G-filtrar módulos do curso no laravel
 -configurado o filter
+
+
+08-AULAS DOS MÓDULOS
+
+35H-CRUD de aulas do módulo
+-para lesson, em web.php, foi usado a meneira de 'resource' para incluir as rotas e métodos de LessonController
+-criado o controller LessonController dentro da pastas Admin, usando o resource
+    php artisan make:controller Admin\\LessonController --resource
+-configurado LessonController
+-criado e configurado de acordo, LessonRepositoryInterface.php
+-criado e configurado de acordo, LessonRepository.php
+-inserido em AppServiceProvider.php, o: LessonRepositoryInterface::class, LessonRepository::class
+-a pasta resources/views/admin/courses/modules, foi duplicada, renomeada como lessons e arrastada para
+    dentro da pasta modules
+-as views da pasta lesson, em seus nomes, onde haviam modules, foi mudado para lessons
+-a view form de /modules/lessons/partials, foi adaptada para lesson
+-a view create de /modules/lessons/partials, foi adaptada para lesson
+-a view edit de /modules/lessons/partials, foi adaptada para lesson
+-a view index de /modules/lessons/partials, foi adaptada para lesson
+-a view show de /modules/lessons/partials, foi adaptada para lesson
+
+
 
 
 
