@@ -5,10 +5,14 @@ use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\ModuleController;
+use App\Http\Controllers\Admin\SupportController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function () {
+
+    /* ROUTE SUPPORTS */
+    Route::get('/supports', [SupportController::class, 'index']);
 
     /* ROUTE LESSONS */
     Route::resource('/modules/{moduleId}/lessons', LessonController::class);

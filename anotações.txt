@@ -301,6 +301,21 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 -em LessonController.php, configurado a function destroy
 
 
+09-SUPORTE
+
+36I-organizando Service Layer e Repositories no Laravel
+-criado a Route index de SupportController
+-criado dentro Admin, o controller SupportController
+    php artisan make:controller Admin\\SupportController
+-em SupportController, criado a function __contruct
+-em SupportController, criado a function index
+-em Service, foi criado SupportService.php
+-em Eloquent, criado SupportRepository.php
+-em Providers, AppServiceProvider, incluído LessonRepositoryInterface
+-
+-
+
+
 
 
 
