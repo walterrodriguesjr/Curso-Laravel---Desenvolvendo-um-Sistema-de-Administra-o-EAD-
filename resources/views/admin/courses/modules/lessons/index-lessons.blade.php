@@ -72,7 +72,7 @@
                                 </div>
                             </td>
                             <td class="px-5 py-2 border-b border-gray-200 bg-white text-sm">
-                                <a href="{{ route('modules.show', [$module->id, $lesson->id]) }}">
+                                <a href="{{ route('lessons.show', [$module->id, $lesson->id]) }}">
                                     <span
                                         class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
                                         <span aria-hidden
@@ -80,7 +80,7 @@
                                         <span class="relative">Detalhes</span>
                                     </span>
                                 </a>
-                                <a href="{{ route('modules.edit', [$module->id, $lesson->id]) }}">
+                                <a href="{{ route('lessons.edit', [$module->id, $lesson->id]) }}">
                                     <span class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight">
                                         <span aria-hidden
                                             class="absolute inset-0 bg-red-200 opacity-50 rounded-full"></span>

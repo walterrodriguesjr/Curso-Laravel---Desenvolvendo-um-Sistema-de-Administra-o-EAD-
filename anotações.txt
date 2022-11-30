@@ -137,8 +137,6 @@
 -criado e configurado as validações de StoreUser.php
     php artisan make:request StoreUser
 
-ERRO, PAUSADO EM 15:54
-
 11D-preparar a edição de usuários no laravel
 -criada a Route users/create/{id}/edit, de get para UserController
 
@@ -291,6 +289,17 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 -a view edit de /modules/lessons/partials, foi adaptada para lesson
 -a view index de /modules/lessons/partials, foi adaptada para lesson
 -a view show de /modules/lessons/partials, foi adaptada para lesson
+-em LessonController.php, configurado a function create
+-em LessonController.php, configurado a function store
+-criada em Request, a class StoreUpdateLesson, e configurada
+    php artisan make:request StoreUpdateLesson
+-em observer, criada a class LessonObserver
+    php artisan make:observer LessonObserver
+-em LessonController.php, configurado a function show
+-em LessonController.php, configurado a function edit
+-em LessonController.php, configurado a function update
+-em LessonController.php, configurado a function destroy
+
 
 
 

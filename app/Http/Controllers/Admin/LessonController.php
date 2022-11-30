@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreUpdateLesson;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\ModuleRepositoryInterface;
 use Illuminate\Http\Request;
@@ -43,9 +44,12 @@ class LessonController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($moduleId)
     {
-        //
+        if (!$module = $this->repositoryModule->findById($moduleId))
+        return back();
+
+        return view('admin/courses/modules/lessons/create-lessons', compact('module'));
     }
 
     /**
@@ -54,9 +58,16 @@ class LessonController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUpdateLesson $request, $moduleId)
     {
-        //
+        if (!$this->repositoryModule->findById($moduleId))
+        return back();
+
+        $data = $request->only(['name', 'video', 'description']);
+
+        $this->repository->createByModule($moduleId, $data);
+
+        return redirect()->route('lessons.index', $moduleId);
     }
 
     /**
@@ -65,9 +76,15 @@ class LessonController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($moduleId, $id)
     {
-        //
+        if(!$module = $this->repositoryModule->findById($moduleId))
+        return back();
+
+        if(!$lesson = $this->repository->findById($id))
+        return back();
+
+        return view('admin/courses/modules/lessons/show-lessons', compact('module', 'lesson'));
     }
 
     /**
@@ -76,9 +93,15 @@ class LessonController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($moduleId, $id)
     {
-        //
+        if (!$module = $this->repositoryModule->findById($moduleId))
+        return back();
+
+        if (!$lesson = $this->repository->findById($id))
+        return back();
+
+        return view('admin/courses/modules/lessons/edit-lessons', compact('module', 'lesson'));
     }
 
     /**
@@ -88,9 +111,15 @@ class LessonController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreUpdateLesson $request, $moduleId, $id)
     {
-        //
+        if (!$this->repositoryModule->findById($moduleId))
+        return back();
+
+
+        $this->repository->update($id, $request->validated());
+
+        return redirect()->route('lessons.index', $moduleId);
     }
 
     /**
@@ -99,8 +128,11 @@ class LessonController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($moduleId, $id)
     {
-        //
+        if(!$this->repository->delete($id))
+        return back();
+
+        return redirect()->route('lessons.index', $moduleId);
     }
 }
