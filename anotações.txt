@@ -312,8 +312,14 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 -em Service, foi criado SupportService.php
 -em Eloquent, criado SupportRepository.php
 -em Providers, AppServiceProvider, incluído LessonRepositoryInterface
--
--
+
+37I-listando as dúvidas dos alunos no laravel
+-em resources/views/admin, criado a pasta supports
+-na pasta supports, criada e configurada a view index.blade.php
+-em Support.php, feito o relacionamento com User e Lesson
+-em template.php, incluído o menu de Dúvidas/supports
+
+ERRO
 
 
 
